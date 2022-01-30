@@ -1,0 +1,5 @@
+GET localhost/webExample/servlet14
+User-Agent: ala ma kota
+
+###
+GET localhost:8080/webexample/servlet11

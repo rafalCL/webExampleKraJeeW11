@@ -16,6 +16,7 @@ import java.io.IOException;
 public class Get1Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/plain");
         resp.setCharacterEncoding("UTF-8");
         String startStr = req.getParameter("start");
         String endStr = req.getParameter("end");

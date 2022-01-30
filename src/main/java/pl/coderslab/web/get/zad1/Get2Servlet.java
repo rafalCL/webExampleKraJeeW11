@@ -22,6 +22,8 @@ import java.util.Set;
 public class Get2Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/plain");
+        resp.setCharacterEncoding("UTF-8");
         Map<String, String[]> parameters = req.getParameterMap();
         for(Map.Entry<String, String[]> e : parameters.entrySet()){
             resp.getWriter().println(String.format("%s : %s", e.getKey(), Arrays.toString(e.getValue())));
