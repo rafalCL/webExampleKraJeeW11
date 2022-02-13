@@ -8,6 +8,7 @@
 <%@include file="WEB-INF/jspf/header.jspf"%>
 <div>
   Hello !!!
+    ${cookie.ala.value}
 </div>
 <%@include file="WEB-INF/jspf/footer.jspf"%>
 </body>
